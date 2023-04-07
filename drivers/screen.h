@@ -1,5 +1,5 @@
-#ifndef A_H
-#define A_H
+#ifndef SCREEN_H
+#define SCREEN_H
 
 #define VIDEO_MEMORY_START_ADDRESS 0xb8000
 #define MAXIMUM_ROWS 25
