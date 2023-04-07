@@ -1,17 +1,11 @@
-void main() {
-  char* video_memory = (char *) 0xb8000;
+#include "../drivers/screen.h"
 
-  video_memory[0] = 'H';
-  video_memory[2] = 'e';
-  video_memory[4] = 'l';
-  video_memory[6] = 'l';
-  video_memory[8] = 'o';
-  video_memory[10] = ',';
-  video_memory[12] = ' ';
-  video_memory[14] = 'W';
-  video_memory[16] = 'o';
-  video_memory[18] = 'r';
-  video_memory[20] = 'l';
-  video_memory[22] = 'd';
-  video_memory[24] = '!';
+int main() {
+  print_char('H', 0, 0, 0);
+  print_char('e', -1, -1, 0);
+  print_char('l', -1, -1, 0);
+  print_char('l', -1, -1, 0);
+  print_char('o', -1, -1, 0);
+
+  return 0;
 }
