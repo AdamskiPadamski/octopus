@@ -56,3 +56,13 @@ void print_char(char character, int column, int row, char attribute_byte) {
   offset = handle_scrolling(offset);
   set_cursor(offset);
 }
+
+void clear_screen() {
+  for (int i = 0; i < MAXIMUM_ROWS; i++) {
+    for (int j = 0; j < MAXIMUM_ROWS; j++) {
+      print_char(' ', j, i, 0);
+    }
+  }
+
+  set_cursor(0);
+}

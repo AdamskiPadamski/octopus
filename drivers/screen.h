@@ -20,4 +20,6 @@ void set_cursor(int offset);
 
 void print_char(char character, int column, int row, char attribute_byte);
 
+void clear_screen();
+
 #endif
