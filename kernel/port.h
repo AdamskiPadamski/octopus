@@ -1,5 +1,5 @@
-#ifndef LOW_LEVEL_H
-#define LOW_LEVEL_H
+#ifndef OCTOPUS_PORT_H
+#define OCTOPUS_PORT_H
 
 unsigned char port_byte_in(unsigned short port);
 
