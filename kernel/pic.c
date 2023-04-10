@@ -12,6 +12,8 @@
 #define PIC2_ICW3 0x02
 #define ICW4      0x01
 
+#define OCW2 0x20
+
 void initialise_pic() {
   port_byte_out(PIC1_COMMAND, ICW1);
   port_byte_out(PIC1_DATA, PIC1_ICW2);
@@ -24,4 +26,7 @@ void initialise_pic() {
   port_byte_out(PIC2_DATA, ICW4);
 }
 
-// void send_end_of_interrupt(
+void send_eoi() {
+  port_byte_out(PIC1_COMMAND, OCW2);
+  port_byte_out(PIC2_COMMAND, OCW2);
+}
