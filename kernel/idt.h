@@ -1,5 +1,5 @@
-#ifndef OCTOPUS_IDT_H
-#define OCTOPUS_IDT_H
+#ifndef OCTOPUS_KERNEL_IDT_H
+#define OCTOPUS_KERNEL_IDT_H
 
 #include <stdint.h>
 

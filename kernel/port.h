@@ -1,5 +1,5 @@
-#ifndef OCTOPUS_PORT_H
-#define OCTOPUS_PORT_H
+#ifndef OCTOPUS_KERNEL_PORT_H
+#define OCTOPUS_KERNEL_PORT_H
 
 unsigned char port_byte_in(unsigned short port);
 

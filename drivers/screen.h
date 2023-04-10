@@ -1,5 +1,5 @@
-#ifndef OCTOPUS_SCREEN_H
-#define OCTOPUS_SCREEN_H
+#ifndef OCTOPUS_DRIVERS_SCREEN_H
+#define OCTOPUS_DRIVERS_SCREEN_H
 
 int get_screen_offset(int column, int row);
 
